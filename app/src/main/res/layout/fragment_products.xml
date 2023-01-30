@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Products"
+    >
+    <ImageView
+        android:src="@drawable/bg_overlay"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/containerCards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"/>
+<!--        <LinearLayout-->
+<!--            android:scrollbars="vertical"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:padding="10sp">-->
+<!--            <LinearLayout-->
+<!--                android:clipToOutline="true"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="120dp"-->
+<!--                android:background="@drawable/card_rounded"-->
+<!--                android:backgroundTint="@color/white"-->
+<!--                android:layout_marginBottom="10sp">-->
+<!--                <ImageView-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/product_1"-->
+<!--                    android:layout_width="120dp"-->
+<!--                    android:layout_height="match_parent"/>-->
+<!--                <LinearLayout-->
+<!--                    android:padding="5sp"-->
+<!--                    android:weightSum="3"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <TextView-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="มะพร้าวลูกเกรดพรีเมี่ยมคัดพิเศษจากฟาร์ม AAA"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="top"-->
+<!--                        android:text="AAA COCONUT"-->
+<!--                        android:textColor="#C1BFBF"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:text="180 บาท/3ลูก"-->
+<!--                        android:textColor="#2C807C"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+<!--                <RelativeLayout-->
+<!--                    android:clipToOutline="true"-->
+<!--                    android:background="@drawable/best_sale_rounded"-->
+<!--                    android:layout_marginLeft="-80dp"-->
+<!--                    android:layout_marginTop="80dp"-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_height="wrap_content">-->
+<!--                    <TextView-->
+<!--                        android:background="@drawable/best_sale_bg"-->
+<!--                        android:text="สินค้าขายดี"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColor="#2C807C"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:fontFamily="@font/kanit_bold"-->
+<!--                        android:layout_height="wrap_content" />-->
+<!--                </RelativeLayout>-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:clipToOutline="true"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="120dp"-->
+<!--                android:background="@drawable/card_rounded"-->
+<!--                android:backgroundTint="@color/white"-->
+<!--                android:layout_marginBottom="10sp">-->
+<!--                <ImageView-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/product_1"-->
+<!--                    android:layout_width="120dp"-->
+<!--                    android:layout_height="match_parent"/>-->
+<!--                <LinearLayout-->
+<!--                    android:padding="5sp"-->
+<!--                    android:weightSum="3"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:fontFamily="@font/kanit"-->
+<!--                        android:text="มะพร้าวลูกเกรดพรีเมี่ยมคัดพิเศษจากฟาร์ม AAA"-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="top"-->
+<!--                        android:text="AAA COCONUT"-->
+<!--                        android:textColor="#C1BFBF"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:text="180 บาท/3ลูก"-->
+<!--                        android:textColor="#2C807C"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:clipToOutline="true"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="120dp"-->
+<!--                android:background="@drawable/card_rounded"-->
+<!--                android:backgroundTint="@color/white"-->
+<!--                android:layout_marginBottom="10sp">-->
+<!--                <ImageView-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/product_1"-->
+<!--                    android:layout_width="120dp"-->
+<!--                    android:layout_height="match_parent"/>-->
+<!--                <LinearLayout-->
+<!--                    android:padding="5sp"-->
+<!--                    android:weightSum="3"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <TextView-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="มะพร้าวลูกเกรดพรีเมี่ยมคัดพิเศษจากฟาร์ม AAA"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="top"-->
+<!--                        android:text="AAA COCONUT"-->
+<!--                        android:textColor="#C1BFBF"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:text="180 บาท/3ลูก"-->
+<!--                        android:textColor="#2C807C"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:clipToOutline="true"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="120dp"-->
+<!--                android:background="@drawable/card_rounded"-->
+<!--                android:backgroundTint="@color/white"-->
+<!--                android:layout_marginBottom="10sp">-->
+<!--                <ImageView-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/product_1"-->
+<!--                    android:layout_width="120dp"-->
+<!--                    android:layout_height="match_parent"/>-->
+<!--                <LinearLayout-->
+<!--                    android:padding="5sp"-->
+<!--                    android:weightSum="3"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <TextView-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="มะพร้าวลูกเกรดพรีเมี่ยมคัดพิเศษจากฟาร์ม AAA"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="top"-->
+<!--                        android:text="AAA COCONUT"-->
+<!--                        android:textColor="#C1BFBF"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:text="180 บาท/3ลูก"-->
+<!--                        android:textColor="#2C807C"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:clipToOutline="true"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="120dp"-->
+<!--                android:background="@drawable/card_rounded"-->
+<!--                android:backgroundTint="@color/white"-->
+<!--                android:layout_marginBottom="10sp">-->
+<!--                <ImageView-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/product_1"-->
+<!--                    android:layout_width="120dp"-->
+<!--                    android:layout_height="match_parent"/>-->
+<!--                <LinearLayout-->
+<!--                    android:padding="5sp"-->
+<!--                    android:weightSum="3"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <TextView-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="มะพร้าวลูกเกรดพรีเมี่ยมคัดพิเศษจากฟาร์ม AAA"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="top"-->
+<!--                        android:text="AAA COCONUT"-->
+<!--                        android:textColor="#C1BFBF"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:text="180 บาท/3ลูก"-->
+<!--                        android:textColor="#2C807C"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

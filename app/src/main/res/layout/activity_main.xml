@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:weightSum="8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/logoBar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#1B4E4A">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10sp"
+                android:weightSum="10"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="homeLogo"
+                    android:padding="6sp"
+                    android:src="@drawable/home">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:autoSizeMaxTextSize="30sp"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeTextType="uniform"
+                    android:ellipsize="end"
+                    android:gravity="center|start"
+                    android:maxLines="1"
+                    android:paddingStart="10sp"
+                    android:paddingLeft="0sp"
+                    android:paddingTop="0sp"
+                    android:paddingEnd="0sp"
+                    android:paddingRight="0sp"
+                    android:paddingBottom="0sp"
+                    android:text="ผลิตภัณฑ์"
+                    android:textColor="#E7CFA3"
+                    android:textColorHint="#E7CFA3"
+                    android:textSize="12sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:contentDescription="aaaLogo"
+                    android:src="@drawable/aaa">
+
+                </ImageView>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:background="#00FFFFFF">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainerView4"
+                android:name="com.example.aumer.Products"
+                tools:layout="@layout/fragment_products"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:background="#1B4E4A"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <Button
+                android:id="@+id/btnProduct"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:padding="0dp"
+                android:text="@string/nav1"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                app:icon="@drawable/home"
+                app:iconGravity="textTop" />
+            <Button
+                android:id="@+id/btnOrders"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:text="@string/nav2"
+                android:textIsSelectable="false"
+                app:icon="@drawable/stack"
+                android:textSize="15sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:padding="0dp"
+                app:iconGravity="textTop" />
+
+            <Button
+                android:id="@+id/btnProfile"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:text="@string/nav3"
+                android:textIsSelectable="false"
+                app:icon="@drawable/profile"
+                android:textSize="15sp"
+                android:padding="0dp"
+                app:iconGravity="textTop" />
+
+            <Button
+                android:id="@+id/btnContactUs"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:padding="0dp"
+                android:text="@string/nav4"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                app:icon="@drawable/phone"
+                app:iconGravity="textTop" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

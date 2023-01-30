@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/productCard"
+        android:clipToOutline="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/card_rounded"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="10sp">
+        <ImageView
+            android:id="@+id/imageProduct"
+            android:scaleType="centerCrop"
+            android:src="@drawable/product_1"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:padding="5sp"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titleProduct"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="มะพร้าวลูกเกรดพรีเมี่ยมคัดพิเศษจากฟาร์ม AAA"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/AAAProduct"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:text="AAA COCONUT"
+                android:textColor="#C1BFBF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/priceProduct"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="180 บาท/3ลูก"
+                android:textColor="#2C807C"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

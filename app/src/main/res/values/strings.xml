@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">aumer</string>
+    <string name="nav1">ผลิตภัณฑ์</string>
+    <string name="nav2">รายการสั่งซื้อ</string>
+    <string name="nav3">โปรไฟล์</string>
+    <string name="nav4">ติดต่อเรา</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="regisText"><u>สมัครสมาชิกใหม่</u></string>
+    <string name="loginText"><u>เข้าสู่ระบบ</u></string>
+</resources>
